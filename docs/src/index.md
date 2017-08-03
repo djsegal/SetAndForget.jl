@@ -1,0 +1,4 @@
+# SetAndForget.jl Documentation
+
+```@contents
+```
