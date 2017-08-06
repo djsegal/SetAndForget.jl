@@ -32,7 +32,7 @@ addprocs( max(0, Sys.CPU_CORES-nprocs()) )
     t_par = @time_function n_run @sync( prefix_parallel!(r, *) )
 
     open("output.jl", "w") do cur_file
-      write(cur_file, t_ser / t_par )
+      write(cur_file, string(t_ser / t_par) )
     end
 
     gc_enable(true)
